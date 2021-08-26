@@ -1,111 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Música para todos - Spotify</title>
-        <link rel="stylesheet"type="text/css" href="css/style.css">
-        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-        <link rel="icon" href="imagens/download.png">
-    </head>
-    <body>
-     <!--- Navbar--->
-    <navbar id="navbar">
-        <div class="navbar-container">
-            <img src="./imagens/logo.png" alt="" class="logo">
-            <ul class="navbar-itens">
-                <li class="navbaritem">Premium</li>
-                <li class="navbaritem">Ajuda</li>
-                <li class="navbaritem">Baixar</li>
-                <li class="navbaritem">Inscrever-se</li>
-                <li class="navbaritem">Entrar</li>
-            </ul>
-        </div>
-    </navbar>
-    <!---Showcase--->
-    <div id="showcase">
-        <div class="showcase-container">
-            <h2>Música para todos.</h2>
-            <p>
-                Milhões de músicas à sua escolha. E nem precisa de cartão de crédito.
-            </p>
-            <buttom class="btn-primary">Obtenha o Spotify Free</buttom>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="css/style.css" rel="stylesheet">
+    <script src="js/script.js"type="text/javascript"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap" rel="stylesheet">
+    <title>Calculadora</title>
+</head>
+<body>
+    <div class="fundo">
+        <h1>Igor Mendes</h1>
+        <div class="calculadora">
+            <h1>Calculadora</h1>
+            <p id="resultado"></p>
+            <table>
+                <tr>
+                    <td><button class="botão"onclick="clean()">C</button></td>
+                    <td><button class="botão"onclick="back()"><</button></td>
+                    <td><button class="botão"onclick="insert('/')">/</button></td>
+                    <td><button class="botão"onclick="insert('*')">X</button></td>
+                </tr>
+                <tr>
+                    <td><button class="botão"onclick="insert('7')">7</button></td>
+                    <td><button class="botão"onclick="insert('8')">8</button></td>
+                    <td><button class="botão"onclick="insert('9')">9</button></td>
+                    <td><button class="botão"onclick="insert('-')">-</button></td>
+                </tr>
+                <tr>
+                    <td><button class="botão"onclick="insert('4')">4</button></td>
+                    <td><button class="botão"onclick="insert('5')">5</button></td>
+                    <td><button class="botão"onclick="insert('6')">6</button></td>
+                    <td><button class="botão"onclick="insert('+')">+</button></td>
+                </tr>
+                <tr>
+                    <td><button class="botão"onclick="insert('1')">1</button></td>
+                    <td><button class="botão"onclick="insert('2')">2</button></td>
+                    <td><button class="botão"onclick="insert('3')">3</button></td>
+                    <td rowspan="2"><button class="botão"style="height: 106px;"onclick="calcular()('=')">=</button></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><button class="botão" style="width: 106px;"onclick="insert('0')">0</button></td>
+                    <td><button class="botão"onclick="insert('.')">.</button></td>
+                </tr>
+            </table>
         </div>
     </div>
-    <!-- Footer -->
-    <footer id="footer">
-        <div class="footer-content">
-            <img src="imagens/logo.png" alt="" class="logo" />
-            <ul class="footer-menu">
-                <p>Empresa</p>
-                <li class="footer-menu-item">
-                    Sobre
-                </li>
-                <li class="footer-menu-item">
-                    Empregos
-                </li>
-                <li class="footer-menu-item">
-                    For the record
-                </li>
-            </ul>
-
-            <ul class="footer-menu">
-                <p>Comunidades</p>
-                <li class="footer-menu-item">
-                    Para Artistas
-                </li>
-                <li class="footer-menu-item">
-                    Desenvolvedores
-                </li>
-                <li class="footer-menu-item">
-                    Marcas
-                </li>
-                <li class="footer-menu-item">
-                    Investidores
-                </li>
-                <li class="footer-menu-item">
-                    Fornecedores
-                </li>
-            </ul>
-
-            <ul class="footer-menu">
-                <p>Links úteis</p>
-                <li class="footer-menu-item">
-                    Ajuda
-                </li>
-                <li class="footer-menu-item">
-                    Player da Web
-                </li>
-                <li class="footer-menu-item">
-                    Aplicativo móvel grátis
-                </li>
-            </ul>
-
-            <div class="socials">
-                <i class="fab fa-instagram"></i>
-                <i class="fab fa-twitter"></i>
-                <i class="fab fa-facebook-f"></i>
-            </div>
-        </div>
-        <div class="footer-info">
-            <ul class="footer-info-items">
-                <li class="footer-info-item">Legal</li>
-                <li class="footer-info-item">Centro de Privacidade</li>
-                <li class="footer-info-item">Política de privacidade</li>
-                <li class="footer-info-item">Cookies</li>
-                <li class="footer-info-item">Sobre anúncios</li>
-            </ul>
-
-            <div class="rights">
-                <div class="country">
-                    <p>Brasil</p>
-                    <img src="imagens/brazil.png" alt="" class="brazil-flag" />
-                </div>
-                <p>&copy; 2020 Spotify AB</p>
-            </div>
-        </div>
-    </footer>
-    <!---Scripts-->
-    <script src="https://kit.fontawesome.com/9df75a50a1.js" crossorigin="anonymous"></script>"
-    </body>
+</body>
 </html>
